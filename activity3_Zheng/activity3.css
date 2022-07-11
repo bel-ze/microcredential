@@ -128,3 +128,6 @@
   .image1,.image2,.image3{width: 90%; height: 60%; object-fit: cover;
 
   }
+  .image1{filter: invert(40%);}
+  .image2{filter: blur(40%);}
+  .image{filter: (40%);}
