@@ -125,6 +125,6 @@
   .divi1{
       position: relative; width 33.33%; float: left;
   }
-  .image1,.image2,.image3{width: 80%; height: auto;
+  .image1,.image2,.image3{width: 90%; height: 70%; object-fit: cover;
 
   }
