@@ -115,23 +115,16 @@
   0%{transform: scale(0); color: green; text-shadow: 5px 5px 2px black;}
   50%{transform: scale(2); color: gray; text-shadow: 5px 5px 2px black;}
   1000%{transform: scale(1); color: red; text-shadow: 5px 5px 2px black;}
-
+}
   /* ------ Activity 3 ------*/
-  .exercise_container{
-    border: ridge 20px gray;
-    width: 10%;
-    margin: auto;
-    margin-bottom: 2em;
+  .hobbies{display: flex;
+    border: 6px solid green;
+    overflow: auto;
     position: relative;
   }
-  .exercise_container img{
-    width: 0%;
+  .divi1{
+      position: relative; width 33.33%; float: left;
   }
-  .photo_e1{
-    text-align: center;
-    font-size: 30em;
-    color: lightgreen;
-    position: absolute;
-    top:0%;
-    background-color: rgba(234,67,53,0.9);
-    box-shadow: 1px 1px 5px green;}
+  .image1,.image2,.image3{width: 80%; height: auto; border: 10px solid red;
+
+  }
