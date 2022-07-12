@@ -126,9 +126,10 @@
       position: relative; width: 30%; float: left;  margin-left: 1%;
 
   }
-  .exercise_1{position: absolute; background-color: rgba(25,10,10,0.9); bottom: 2%; left: 10%; right: 10%; color: lightgray; text-align: center; padding: 1em; border: solid 6px red;}
+  .exercise_1{position: absolute; background-color: rgba(25,10,10,0.9); bottom: 10%; left: 10%; right: 10%; color: lightgray; text-align: center; padding: 10px 50px 100px 30px;; border: solid 2px white;}
+  .exercise_1 h2{position: relative; font-size: 4em; top: -10; bottom: -10%; left: 10%; right: 10%; text-align: left; padding: 20px 50px 10px 30px; text-shadow: 5px 5px 25px black; color: lightblue}
 .exercise_1 p,.read_1{background-color: transparent;}
-  .exercise_2{position: absolute; top: 70%; bottom: 2%; left: 10%; right: 10%; text-align: left; padding: 2em; font-size: 1.6em;}
+.exercise_2{position: absolute; font-size: 25px; top: 65%; bottom: 10%; left: 3%; right: 5%; text-align: left; padding: -3em; text-shadow: 5px 5px 25px black; color: lightblue}
 
   .divi2{
       position: relative; width: 30%; float: left;  margin-left: 1%;
