@@ -133,17 +133,22 @@
   .divi2{
       position: relative; width: 30%; float: left;  margin-left: 1%;
   }
-  .diviparagraphs{background-color: rgba(255, 0, 0, 0.5); position: absolute; bottom: 30%; top: 30%; right: 10%; left: 10%; text-align: center; padding: 1em;
-    /*add hyperlink later*/
-
+  .diviparagraphs{background-color: rgba(0, 0, 0, 0.5); position: absolute; bottom: 30%; top: 30%; right: 10%; left: 10%; text-align: center; padding: 1em;
   }
+  .diviparagraphs h2{font-size: 4em; color: yellow; top: 90%; text-align: center;}
+  .diviparagraphs h1{font-size: 3em; color: white;}
+  .diviparagraphs p{font-size: 1em;}
+  .new_link1{display: block; background-color: orange; margin-top: 1em; padding: 0.2em; border-radius: 50px; text-decoration: none;}
+  .new_link1:hover{background-color: lightblue; box-shadow: 0px 0px 5px 2px gray;}
+
+
   .divi3{
       position: relative; width: 30%; float: left; margin-left: 1%;
   }
   .image1,.image2,.image3{width: 100%; height: 60%; object-fit: cover;
     }
   .d3paragraph1{
-    position: absolute; top: 50%; bottom: 10%, right: 10%; left: 20%; text-align: center; border: solid 6px orange;
+    background-color: rgba(255, 0, 0, 0.5); position: absolute; top: 50%; bottom: 10%, right: 10%; left: 10%; text-align: center; padding: 2em; border: solid 6px orange;
   }
   /* ------ Activity 3 images effect ------*/
 
