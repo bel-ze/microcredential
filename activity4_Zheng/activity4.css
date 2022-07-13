@@ -17,7 +17,7 @@
 }
 
 .waterfall_img{
-  animation-name: invertWaterfall; animation-delay: 10s; animation-duration: 1s; animation-iteration-count: 2;
+  animation-name: invertWaterfall; animation-delay: 4.5s; animation-duration: 1s; animation-iteration-count: 2;
 }
 @keyframes invertWaterfall {
   0%{filter: invert(0%);}
@@ -26,22 +26,39 @@
 }
 
 /*-Activity 3 - animation to text -*/
-.relax{position: absolute; top: 20%; bottom: 20%; text-align: center; background-color: transparent; left: 10%; right: 10%; color: white; font-size: 7em;}
+.relax{position: absolute; top: 20%; bottom: 20%; text-align: center; background-color: transparent; left: 10%; right: 10%; color: white; font-size: 7em; animation: water_text alternate 2s forwards;}
+@keyframes water_text {
+  0%{transform: scale(0); color: blue; text-shadow: 10px 5px 2px black;}
+  45%{transform: scale(2); color: gray; text-shadow: 5px 7px 2px black;}
+  100%{transform: scale(1); color: red; text-shadow: 5px 9px 2px black;}
+}
 
 /*-Activity 3 - animation to smile -*/
-.smile_img{position: absolute; top: 56%; bottom: 20%; text-align: center; background-color: White; left: 44%; right: 10%; color: blue; border-radius: 63px}
+.smile_img{position: absolute; top: 56%; bottom: 20%; text-align: center; background-color: White; left: 44%; right: 10%; color: blue; border-radius: 63px; animation: hello_smile 2s alternate 2s forwards;}
+@keyframes hello_smile {
+  0%{transform: scale(0); color: blue; text-shadow: 10px 5px 2px black;}
+  45%{transform: scale(2); color: red; text-shadow: 5px 7px 2px black;}
+  100%{transform: scale(1); color: yellow; text-shadow: 5px 9px 2px black;}
+}
 
 /*-Activity 3 - animation to hearts -*/
-.heart_img1,.heart_img2,.heart_img3,.heart_img4,.heart_img5,.heart_img6,.heart_img7,.heart_img8,.heart_img9,.heart_img10,.heart_img11,.heart_img12{height: 120px; position: absolute;}
+.heart_img1,.heart_img2,.heart_img3,.heart_img4,.heart_img5,.heart_img6,.heart_img7,.heart_img8,.heart_img9,.heart_img10,.heart_img11,.heart_img12{height: 120px; position: absolute; animation-name: shideHearts; animation-delay: 6.5s; animation-duration: 0.5s; animation-iteration-count: infinite;}
 .heart_img1{width: 5%; height: 10%; top: 5%; left: 20%; right: 80%; margin-left: auto;}
 .heart_img2{width: 6%; height: 10%; top: 30%; left: 20%; right: 82%; margin-left: auto;}
 .heart_img3{width: 6%; height: 12%; top: 55%; left: 10%; right: 86%; margin-left: auto;}
 .heart_img4{width: 6%; height: 8%; top: 80%; left: 10%; right: 90%; margin-left: auto;}
-.heart_img5{width: 4%; height: 12%; top: 80%; left: 10%; right: 75%; margin-left: auto;}
-.heart_img6{width: 5%; height: 7%; top: 80%; left: 10%; right: 35%; margin-left: auto;}
-.heart_img7{width: 8%; height: 4%; top: 75%; left: 10%; right: 30%; margin-left: auto;}
-.heart_img8{width: 9%; height: 7%; top: 55%; left: 10%; right: 28%; margin-left: auto;}
-.heart_img9{width: 5%; height: 8%; top: 75%; left: 90%; right: 45%; margin-left: auto;}
-.heart_img10{width: 7%; height: 20%; top: 15%; left: 90%; right: 45%; margin-left: auto;}
+.heart_img5{width: 4%; height: 12%; top: 80%; left: 10%; right: 65%; margin-left: auto;}
+.heart_img6{width: 5%; height: 7%; top: 80%; left: 10%; right: 25%; margin-left: auto;}
+.heart_img7{width: 8%; height: 4%; top: 75%; left: 10%; right: 10%; margin-left: auto;}
+.heart_img8{width: 9%; height: 7%; top: 55%; left: 10%; right: 18%; margin-left: auto;}
+.heart_img9{width: 5%; height: 8%; top: 75%; left: 90%; right: 35%; margin-left: auto;}
+.heart_img10{width: 7%; height: 20%; top: 15%; left: 90%; right: 15%; margin-left: auto;}
 .heart_img11{width: 12%; height: 13%; top: 25%; left: 85%; right: 55%; margin-left: auto;}
-.heart_img12{width: 9%; height: 8%; top: 32%; left: 85%; right: 34%; margin-left: auto;}
+.heart_img12{width: 9%; height: 8%; top: 22%; left: 85%; right: 34%; margin-left: auto;}
+@keyframes shideHearts {
+    0%{opacity: 0;}
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+
+}
