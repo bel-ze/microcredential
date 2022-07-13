@@ -1,3 +1,16 @@
+/*-Activity 3 - Loading Icons -*/
 .test1{width: 200px; height: 200px;}
-.test1{background-color: yellow;margin-bottom: 50px; border: solid green 6px;}
+.test1{background-color: yellow; margin-bottom: 50px; border: solid green 6px;}
 .waterfall_img{top: 10px; bottom: 10px; left: 10px; right: 10px; width: 1093px; display: inline; border: solid black 4px; padding: 5px; background-color: white; margin: auto;}
+.heart_img1,.heart_img2,.heart_img3,.heart_img4,.heart_img5,.heart_img6,.heart_img7,.heart_img8,.heart_img9,.heart_img10,.heart_img11,.heart_img12{height: 90px; position: absolute;}
+
+
+/*-Activity 3 - animation background image -*/
+.waterfall_animation{
+  border: ridge 20px gray;
+  width: 58%;
+  margin: auto;
+  margin-bottom: 2em;
+  position: relative;
+  overflow: hidden;
+}
