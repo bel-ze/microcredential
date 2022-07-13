@@ -121,26 +121,28 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    border: solid black 2px;
+    margin: auto;
   }
   .divi1{
       position: relative; width: 30%; float: left;  margin-left: 1%;
 
   }
-  .exercise_1{position: absolute; background-color: rgba(25,10,10,0.9); bottom: 10%; left: 10%; right: 10%; color: lightgray; text-align: center; padding: 10px 50px 100px 30px;; border: solid 2px white;}
-  .exercise_1 h2{position: relative; font-size: 4em; top: -10; bottom: -10%; left: 10%; right: 10%; text-align: left; padding: 20px 50px 10px 30px; text-shadow: 5px 5px 25px black; color: lightblue}
+  .exercise_1{position: absolute; background-color: rgba(25,10,10,0.9); bottom: 10%; left: 10%; right: 10%; color: lightgray; text-align: center; padding: 10px 50px 10px 30px; border: solid 2px white; margin-top: 2em;}
+  .exercise_1 h2{position: relative; font-size: 4em; top: -61px; bottom: -10%; left: -3%; right: 10%; text-align: center; padding: 20px 50px 10px 30px; text-shadow: 5px 5px 25px black; color: lightblue}
 .exercise_1 p,.read_1{background-color: transparent;}
-.exercise_2{position: absolute; font-size: 25px; top: 65%; bottom: 10%; left: 3%; right: 5%; text-align: left; padding: -3em; text-shadow: 5px 5px 25px black; color: lightblue}
+.exercise_2{position: absolute; font-size: 25px; top: 90px; bottom: 10%; left: 3%; right: 5%; text-align: center; padding: -3em; text-shadow: 5px 5px 25px black; color: lightgray}
 
   .divi2{
       position: relative; width: 30%; float: left;  margin-left: 1%;
   }
-  .diviparagraphs{background-color: rgba(0, 0, 0, 0.5); position: absolute; bottom: 30%; top: 30%; right: 10%; left: 10%; text-align: center; padding: -1em;
+  .diviparagraphs{background-color: rgba(0, 0, 0, 0.5); position: absolute; bottom: 30%; top: 30%; right: 10%; left: 10%; text-align: center; padding: -1em; border: solid white 2px;
   }
-  .diviparagraphs h2{font-size: 4em; color: yellow; top: 100%; text-align: center; padding: -3em; text-shadow: 5px 5px 25px black;}
-  .diviparagraphs h1{font-size: 3em; color: white; text-shadow: 5px 5px 25px black;}
-  .diviparagraphs p{font-size: 55px; background-color: transparent;}
-  .new_link1{display: block; background-color: orange; margin-top: 1em; padding: 0.1em; border-radius: 50px; text-decoration: none;}
-  .new_link1:hover{background-color: lightblue; box-shadow: 0px 0px 5px 2px gray;}
+  .diviparagraphs h2{font-size: 3.3em; color: yellow; top: 100%; text-align: center; padding: -3em; text-shadow: 5px 5px 25px black;}
+  .diviparagraphs h1{font-size: 3em; color: white; text-shadow: 1px 3px 10px black;}
+  .diviparagraphs p{font-size: 35px; background-color: transparent;}
+  .new_link1{display: block; background-color: orange; margin-top: -0.7em; padding: 1em; border-radius: 50px; text-decoration: none; font-size: 1em}
+  .new_link1:hover{background-color: lightblue; box-shadow: 0px 10px 5px 2px gray;}
 
 
   .divi3{
@@ -148,14 +150,17 @@
   }
   .image1,.image2,.image3{width: 100%; height: 60%; object-fit: cover;
     }
-  .d3paragraph1{
-    background-color: rgba(255, 0, 0, 0.2); position: absolute; bottom: 40%; top: 36%; right: 10%; left: 10%; text-align: center; padding: -2em; font-size: 50px; color: white; text-shadow: 3px 8px 8px black;
+
+  .divi3paragraphs{background-color: rgba(255, 0, 0, 0.3); position: absolute; bottom: 40%; top: 30%; right: 8%; left: 8%; text-align: center; padding: 5px -50px 16px 5px; margin-top: 2em; border: solid orange 2px; border-radius:25px;
   }
-    .d3paragraph2{background-color: transparent; position: absolute; top: 65%; bottom: 10%, right: 29%; left: 40%; text-align: left; padding: 2em; font-size: 30px; color: white; width: 280px; text-shadow: 3px 8px 10px black}
+    .d3paragraph1{
+  font-size: 45px; color: white; text-shadow: 1px 2px 6px black; top: 20%
+  }
+    .d3paragraph2{background-color: transparent; position: absolute; top: 167%; bottom: 0%, right: 29%; left: 46%; text-align: left; padding: 20px; font-size: 19px; color: white; width: 150px; text-shadow: 2px 1px 5px black}
 
-    .d3paragraph3{background-color: transparent; position: absolute; top: -17%; bottom: 10%, right: 110%; left: -33%; text-align: left; padding: 200px; font-size: 38px; color: white; width: 550px; text-shadow: 3px 8px 10px black}
+    .d3paragraph3{background-color: transparent; position: absolute;  top: -155%; bottom: 90%; right: -42%; left: -12%; text-align: left; padding: 20px; font-size: 34px; color: white; width: 550px; text-shadow: 3px 2px 10px black}
 
-    .d3paragraph4{background-color: transparent; position: absolute; top: 4%; bottom: 90%, right: -13%; left: -18%; text-align: left; padding: 200px; font-size: 30px; color: white; width: 450px; text-shadow: 3px 8px 10px black}
+    .d3paragraph4{background-color: transparent; position: absolute; top: -70%; bottom: 90%; right: 30%; left: -12%; text-align: left; padding: 20px; font-size: 20px; color: white; width: 120px; text-shadow: 3px 2px 8px black}
   /* ------ Activity 3 images effect ------*/
 
   .image1{filter: invert(80%);}
@@ -169,5 +174,6 @@
   text-align: center;
   background-image: linear-gradient(rgba(255, 0, 0, 0.5),rgba(183, 133, 0, 0.5)),url("images/sleep.jpg");
   background-size: 100% 100%;
-  height: 1150px;
+  height: 670px;
+
 }
