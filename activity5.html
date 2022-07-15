@@ -60,10 +60,12 @@ console.log("Activity 5 has begun.");
 
   console.log("========== Activity 5.2) String and string methods ==========");
     let activity5_p3 = prompt("Enter a word:");
-    console.log("a) The second letter of the word is:" + activity5_p3.charAt(1));
-    console.log("b) The length of word"+ activity5_p3 "is ______");
-    console.log("c) Uppercase:");
-    console.log("d) The last two characters of the word _____ is ______");
+    console.log("a) The second letter of the word is: " + activity5_p3.charAt(1));
+    let msgLength = activity5_p3.length;
+    console.log("b) The length of word "+ activity5_p3 + " is " + msgLength);
+    let msgUppercase = activity5_p3.toUpperCase();
+    console.log("c) Uppercase: " + msgUppercase);
+    console.log("d) The last two characters of the word " + activity5_p3 + " is ______");
 
   console.log("========== Activity 5.3) Arrays and array methods ==========");
     console.log("Mixed array with initial values: ____________")
