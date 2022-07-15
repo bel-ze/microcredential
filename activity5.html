@@ -68,12 +68,17 @@ console.log("Activity 5 has begun.");
     console.log("d) The last two characters of the word " + activity5_p3 + " is "+ activity5_p3.slice(-2));
 
   console.log("========== Activity 5.3) Arrays and array methods ==========");
-    console.log("Mixed array with initial values: ____________")
+    let mixedArray = ['53', 'blue', 'false', '23', "frog"]
+    console.log("a) Mixed array with initial values: "+mixedArray)
     let activity5_a1 = prompt("Enter an ANIMAL:");
-    console.log("Mixed array with an new animal added to the end: _________");
+    let mixedarimal = [mixedArray, activity5_a1]
+    console.log("b) Mixed array with an new animal added to the end: " + mixedarimal);
     let activity5_nn = prompt("Enter a NEGATIVE NUMBER:");
-    console.log("Mixed array with a new NEGATIVE NUMBER added to the front, beginning, of the array : ________");
-    console.log("Mixed array ______ and reverse of copy array: _______");
+    let mixedarneg = [activity5_nn, mixedArray, activity5_a1];
+    console.log("c) Mixed array with a new NEGATIVE NUMBER added to the front, beginning, of the array : "+ mixedarneg);
+    let revcopyray = mixedarneg.reverse();
+    let mixedarneg2 = [activity5_nn, mixedArray, activity5_a1];
+    console.log("d) Mixed array "+ mixedarneg2 + " and reverse of copy array: " +revcopyray);
 
 
       </script>
