@@ -169,18 +169,43 @@
         }
 
 */
-<<<<<<< HEAD
-        alert("Activity 6 Begins")
-      console.log("Activity 6 has begun.");
 
-=======
 alert("Activity 6 Begins")
 console.log("Activity 6 has begun")
->>>>>>> 21a4544d653f66660dbcf3a2c5d5f6cf732b5721
+    let inputFromUser = prompt("Please enter a number or string: ")
+    let inputCheckUser = isNaN(parseInt(inputFromUser))
+console.log("Activity 6.1 - if, else if, else statement")
+    if(inputCheckUser){
+      console.log(`${inputFromUser} is a string`);
+    }
+    if (inputFromUser>=0) {
+      console.log(`${inputFromUser} is a positive number`);
+    }
 
+    else if (inputFromUser<=0){
+      console.log(`${inputFromUser} is a negative number`)
+      }
 
+console.log("Activity 6.2 - switch statement")
+    let inputColorUser = prompt("Pick a color (type a, b, or c):\n a) Red \n b) Blue \n c) Green ")
 
+    switch (inputColorUser) {
+      case 'red': case 'RED': case'Red': case'a': case'A':
+      console.log('The selected color is red!');
+      break;
+      case 'blue': case 'BLUE': case 'Blue': case'b': case'B':
+      console.log('The selected color is blue!');
+      break;
+      case 'green': case 'GREEN': case 'Green': case'c': case'C':
+      console.log('The selected color is green!');
+      break;
+      default:
+      console.log('INVALID!');
+    }
 
       </script>
+
+            <br><br><br>
+            <h3>Updated: 7/15/22 9:20pm: version 1.00</h3>
   </body>
 </html>
