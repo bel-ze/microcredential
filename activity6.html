@@ -7,6 +7,8 @@
   <body>
       <h1>Maybelle Zheng: Activity 6</h1>
       <script type="text/javascript">
+/*
+        // example 1
         let goodMood = true;
         let gotSleep = true;
 
@@ -66,7 +68,111 @@
     else {
       console.log('INVALID!');
     }
-      //example 5) write JS code that opens a dialog box and asks the user to enter a number. If the user enters a string, it will console a message as: ________ is a string. 
+      //example 5) write JS code that opens a dialog box and asks the user to enter a number. If the user enters a string, it will console a message as: ________ is a string. Otherwise, if the user enters a number, it will console a message as: ______ is a number.
+      let userInput = prompt("Enter a number: ")
+      let checkInput = isNaN(parseInt(userInput))
+
+      if(checkInput){
+        console.log(`${userInput} is a string`);
+      }
+      else{
+        console.log(`${userInput} is a number`)
+      }
+
+      //example 6) Create a JS code, using if-else statement, to check if a password is at least six characters not counting hte space. If the password has more than six characters but it also has space, then the program will display an error message,
+      let password = prompt("Enter a password with 6+ characters: ")
+
+      if (password.length>=6){
+        console.log('Password has more than 6 characters!')
+        if (password.indexOf(' ')===-1){
+          console.log(`${password} Great! Password has no space!`)
+        }
+        else{console.log('Warning! Password cannot have space!')}
+        }
+        else{
+          console.log('INVALID! Password has less than 6 characters!');
+        }
+
+        //example 7)
+        let name = prompt("Enter a name: ")
+
+        if(name){console.log(`Welcome to the program ${name}`)}
+        else{console.log('You did not enter a name!')}
+*/
+
+        //example 8) simple the inner if-else statement of example 6 by using the AND operator
+/*
+        let password = prompt("Enter a password with 6+ characters: ")
+
+        if (password.length>=6 && password.indexOf(' ')===-1 ){
+          console.log( `${password} is valid!`)
+          }
+          else{
+            console.log(`WARNING! "${password}," is an incorrect password format!`);
+          }
+
+
+          //example 9) type a mystery constant that will make the console to display YOU GOT IT!!!. User has to guess a word that starts with letter "P", with length greater than 5, and has a number 7 in the world!
+-skipped
+
+
+          //example 10) write a JS code that asks the user to rate a book as: 1) Excellent, 2) Good/Average 3) Bored! . If the user select "Bored", the program will prompt another window asking why the book was rated as "Board"
+
+          let rate = prompt('Enter a rate for "The Book":\n 1) Excellent \n 2) Good/Average \n 3) Bored! \n Select a number from 1 to 3.')
+          if(rate ==='3'){
+            let comments = ('We are sorry that you find "The Book" borning. Please comment: ')
+            console.log(`Thank you for your feedback: ${comment}`);
+          }
+          else if (rate==='1' || rate==='2') {
+            console.log('Thank you for choosing "The Book"');
+          }
+          else {
+            console.log('INVALID RATE!');
+          }
+
+        //example 11) ticket's price
+        let age = 180
+
+        if (age>=0 && age<=7 || age>=65 && age<=120) {console.log('FREE TICKETS');
+
+        }
+        else if (age>=8 && age<=17) {console.log('$5.00 per ticket');
+        }
+
+        else if (age>=18 && age<=65){console.log('$8.00 per ticket');}
+        else{console.log('INVALID AGE!');}
+
+        //example 12) convert example 4 using switch statement
+
+        let colors = ['red', 'blue', 'green', 'yellow', 'orange']
+        let userPick = parseInt(prompt("Select a color from 1-5")) // parseiNT () converts input into an integer
+        let selectColor = colors[userPick - 1];
+
+        switch (selectColor) {
+          case 'red':
+          console.log('The selected color is red!');
+          break;
+          case 'blue':
+          console.log('The selected color is blue!');
+          break;
+          case 'green':
+          console.log('The selected color is green!');
+          break;
+          case 'yellow':
+          console.log('The selected color is yellow!');
+          break;
+          case 'orange':
+          console.log('The selected color is orange!');
+          break;
+          default:
+          console.log('INVALID!');
+        }
+
+*/
+alert("Activity 6 Begins")
+console.log("Activity 6 has begun")
+
+
 
 
       </script>
