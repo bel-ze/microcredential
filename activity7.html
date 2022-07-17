@@ -117,11 +117,14 @@ alert("Activity 7 Begins")
 console.log("Activity 7 has begun")
 console.log("a) while loop nesting with if - else if – else statement");
 
-const userInput = prompt("Enter a number between 1 and 10");
+let userInput = prompt("Enter a number between 1 and 10");
 let checkuserInput = isNaN(parseInt(userInput));
-if userInput = prompt(`"${userInput}", is not a number. Enter a number again`)
+while (userInput == checkuserInput){
+prompt(`"${userInput}", is not a number. Enter a number between 1 and 10 again`)
+continue;
+ }
 
-else if (userInput>10){
+ if (userInput>10){
 userPick = prompt(`"${userInput}", is greater than 10. Enter a number less than 10: `)
 checkuserInput = parseInt(userPick);
 naNcheck = isNaN(userInput);
@@ -137,10 +140,11 @@ continue;
 else{console.log(`You entered, "${userInput}"`);}
 
 /*
-
-prompt(`${} You entered _____`)
-
 console.log("for loop");
+
+for(var ui = userInput; ui<=20; ui++){
+  console.log(`The number is = ""${ui}", now."`);
+
 */
 
 
