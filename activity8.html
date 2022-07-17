@@ -60,18 +60,25 @@ function sumXY(){
 }
 
 // example 9) with parameters and return value: defome a function that takes a number as parameter. The function will double the number and return the result.
-let userNum = parse(prompt('Enter a number'))
+let userNum = parseInt(prompt('Enter a number'))
 function doubleNumber(number){
   let dNumber = number*2;
   return dNumber
 }
 
 // example 10) with parameters and return value: defome a function that takes a number as parameter. The function will double the number and return the result.
-  
+  let a = 5/6, b = 3, c = 9, d = -5
+
+  function sumNum(num1, num2){
+    let sum = num1+num2
+    return sum
+  }
+
+let number1 = sumNum(10, d)
+let number2 = sumNum(a,c)
 
 
-
-// example 11) define a function that checks if the termperature outdoor is greater than 75. The function should accept a single number argument as temperature and return a true if the temperature is greater than or equal to 75 and a false if the temperature is less than 75.
+// example 11) define a function that checks if the temperature outdoor is greater than 75. The function should accept a single number argument as temperature and return a true if the temperature is greater than or equal to 75 and a false if the temperature is less than 75.
 
 function isShortsWeather(temperature){
   if (temperature>=75){return true;}
@@ -108,7 +115,7 @@ let numPI = Math.PI;
 // example 14) create a function that randomly generate a number between 10 and 20 inclusive
 
 function pickNum(){
-  let pick = 10 + Math.round(Math.random()*10)
+  let pick = 10 + Math.round(Math.random()*20)
   return pick
 }
 
