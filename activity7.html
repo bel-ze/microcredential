@@ -79,7 +79,7 @@
     //example 9) use while loop to display number from 0 to 4. Smilar in example 1) using for loop
     let initial = 0;
     while(initial<=4){
-      console.log(`The current countn is ${initial}`);
+      console.log(`The current count is ${initial}`);
     initial++
   }
 
@@ -91,36 +91,63 @@
   while (numberUser !== SECRET) {
     numberUser = parseInt(prompt("WRONG! Guess another number between 0 and 10"))
   }
-*/
+
     //example 11) Create a JS code that will stop a decrement counter from 20 to 0, inclusive, when the counter reaches 9.
 
-    for(let counter = 20; counter>=0; counter--){
+    for(let counter = 20; counter>=0; counter--){ //"--" means subtract "1" from the counter
       if(counter===9){
         break
       }
       console.log(`Counter = ${counter}`);
     }
 
-    //example 12) Create a JS code that will skip a number of an increment counter from 0 to
-    let userPick = parseInt(prompt(`Enter`))
+    //example 12) Create a JS code that will skip a number of an increment counter from 0 to 10, inclusive. The skip number is entered by user from a dialog box.
+    let userPick = parseInt(prompt(`Enter a number between 0 and 10`));
+    for(counter=0; counter<=10; counter++){
+      console.log(`Counter = ${counter}`);
+      if(counter===userPick){
+        continue
+      }
+    }
+*/
 
-//NEEDS WORK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 //Activity 7
+alert("Activity 7 Begins")
+console.log("Activity 7 has begun")
 console.log("a) while loop nesting with if - else if – else statement");
-prompt(`${} is not a number. Enter a number again`)
-prompt(`${} is greater than 10. Enter a number less than 10.`)
-prompt(`${} is less than 1. Enter a number greater than 1.`)
-prompt(`${} Your entered _____`)
+
+const userInput = prompt("Enter a number between 1 and 10");
+let checkuserInput = isNaN(parseInt(userInput));
+if userInput = prompt(`"${userInput}" is not a number. Enter a number again`)
+
+else if (userInput>10){
+userPick = prompt(`${userInput} is greater than 10. Enter a number less than 10: `)
+checkuserInput = parseInt(userPick);
+naNcheck = isNaN(userInput);
+continue;
+}
+else if(userInput<1){
+checkuserInput = parseInt(userPick);
+naNcheck = isNaN(userInput)
+userInput = prompt(`"${userInput}" is less than 1. Enter a number greater than 1. `)
+continue;
+
+}
+else{console.log(`You entered ${userInput}`);}
+
+/*
+
+prompt(`${} You entered _____`)
 
 console.log("for loop");
-
+*/
 
 
     </script>
 
             <br><br><br>
-            <h3>Updated: 7/16/22 9:20am: version 1.00</h3>
+            <h3>Updated: 7/16/22 11:29pm: version 1.00</h3>
 
 
 

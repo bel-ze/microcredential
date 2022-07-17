@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Maybelle Zheng: Activity 8 - Functions </title>
+  </head>
+  <body>
+    <h1>Maybelle Zheng: Activity 8 -  Functions</h1>
+    <script type="text/javascript">
+      // example 1) without parameters or return value: define a function that will print a message in the console
+      function msg(){
+        console.log("Hello!");
+      }
+
+      // example 2) without parameters or return value: define a function called printCount tha prints out the number from 3 to 1, inclusive, every time the function is called.
+      function printCount(){
+        for(let i=3; i>=1; i-=1){
+          console.log(i);
+      }
+    }
+
+    // example 3) define a function that takes a parameter as name and print the argument value in the console
+function greeting(name){
+  console.log(`Hello ${name}`);
+}
+
+// example 4) define a function that will take a message as an argument and convert its value in toUpperCase
+function upperMessage(message){
+  let upper = message.toUpperCase();
+  console.log(upper);
+}
+
+// example 5) function with multiple parameters, no return value: define as a function that will take two parameters, firstName and lastName, and print the first name with the initial letter of the last name.
+  function greet(firstName, lastName){
+    console.log(`Hello ${firstName} ${lastName[0].toUpperCase()}`)
+}
+
+// example 6) define a function witm two parameters, message and numCount. The function will print the message numCount times.
+function printMsg(message, numCount){
+  for(counter=1; counter<=numCount ; counter++){
+    console.log(`Counter ${counter} = ${message}`);
+  }
+}
+// example 7) multiple parameters and no return value: define a function that accepts two parameters, dice1 and dice 2, and check if dice 1 and dice2 are equal to 1.
+function isSnakeEyes(dice1, dice2){
+  if (dice1===1 & dice2===1) {
+    console.log('Snake Eyes!');
+
+  }
+  else {console.log('Not Snake Eyes!');
+  }
+}
+
+
+// example 8) without parameters but return value: define function that return the sum of two numbers
+function sumXY(){
+  let x=7, y=-3
+  return x+y
+  console.log('HELLO WORLD!');
+}
+
+// example 9) with parameters and return value: defome a function that takes a number as parameter. The function will double the number and return the result.
+function doubleNumber(number){
+  let dNumber = number*2;
+  return dNumber
+}
+
+
+// example 11) define a function that checks if the termperature outdoor is greater than 75. The function should accept a single number argument as temperature and return a true if the temperature is greater than or equal to 75 and a false if the temperature is less than 75.
+
+function isShortsWeather(temperature){
+  if (temperature>=75){return true;}
+  else{return false;}
+}
+
+// example 12) define a function that accepts a single array argument. The function should return the last item in an array. If the array is empty, the function should return null.
+
+function lastElement(arrayInput){
+  if(arrayInput ===undefined){return null}
+  else if(arrayInput.length !==0){
+    let lastIndex = arrayInput.length - 1;
+    return arrayInput[lastIndex]
+  }
+  else{return null}
+}
+
+// example 13) Math function in JS
+let numPI = Math.PI;
+    console.log(`PI value = ${numPI}`);
+    //Math.round() returns the nearest integer
+    console.log(`PI with Math.round() = ${Math.round(numPI)}`);
+    //Math.ceil(returns the value rounded up to its nearest integer)
+    console.log(`PI with Math.ceil() = ${Math.ceil(numPI)}`);
+    //Math.floor() returns the value rounded down to its nearest integer.
+    console.log(`PI with Math.floor() = ${Math.floor(numPI)}`);
+    //Math.trunc() returns the integer, whole, part of the number
+    console.log(`PI with Math.trunc() = ${Math.trunc(numPI)}`);
+    //Math.pow(base, exponent), returns the value of base to the power of exponent
+    console.log(`Math.pow(2,3) = ${Math.pow(2,3)}`);
+    //Math.sqrt() returns a random number between 0 (inclusive), and 1 (exclusive)
+    console.log(`Math.random() = ${Math.random()}`);
+
+// example 14) create a function that randomly generate a number between 10 and 20 inclusive
+
+function pickNum(){
+  let pick = 10 + Math.round(Math.random()*10)
+  return pick
+}
+
+// example 15) Crate a function that randomly pick a color from an array
+
+let colors=['red','green','blue', 'yellow','orange']
+
+function colorPick(lastIndex){
+  let pick = Math.round(Math.random()*lastIndex)
+  return pick
+}
+
+  //call function colorPick()
+  pickedIndex = colorPick(colors.length - 1)
+  console.log(`The picked color is ${colors[pickedIndex]}`);
+    </script>
+
+    <br><br><br>
+    <h3>Updated: 7/16/22 1:20pm: version 1.00</h3>
+  </body>
+</html>
