@@ -121,20 +121,17 @@ let userInput = prompt("Enter a number between 1 and 10");
 let checkuserInput = isNaN(parseInt(userInput));
 while (userInput == checkuserInput){
 prompt(`"${userInput}", is not a number. Enter a number between 1 and 10 again`)
-continue;
  }
 
  if (userInput>10){
 userPick = prompt(`"${userInput}", is greater than 10. Enter a number less than 10: `)
 checkuserInput = parseInt(userPick);
 naNcheck = isNaN(userInput);
-continue;
 }
 else if(userInput<1){
 checkuserInput = parseInt(userPick);
 naNcheck = isNaN(userInput)
 userInput = prompt(`"${userInput}", is less than 1. Enter a number greater than 1. `)
-continue;
 
 }
 else{console.log(`You entered, "${userInput}"`);}
