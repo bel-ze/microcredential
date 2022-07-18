@@ -1,0 +1,86 @@
+
+.canada_flag{
+position: relative;
+width: 9%;
+height: 60%;
+margin: 700px;
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 10px 10px 10px 10px;
+}
+.intro1{
+  background-color: lightgrey; height: 250px; padding: 10px 10px 10px 10px; margin-top: 20px;
+}
+.intro1 p{
+  position: absolute;
+  top: 1%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+.intro1 h1{
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  text-align: center;
+  font-size: 120px;
+  font-family: "Lucida Handwriting", cursive;
+  color: darkred;
+}
+
+.canada1{
+position: relative;
+width: 58%;
+height: 65%;
+margin: -4px;
+margin-top: 20px;
+margin-bottom: 20px;
+border: solid black 3px;
+padding: 10px 10px 10px 10px;
+}
+
+.beaverbeli h1{
+  position: absolute;
+  top: 60%;
+  margin-left: -70px;
+  width: 60%;
+  text-align: center;
+  font-size: 140px;
+  color: blue;
+text-shadow: 2px 2px 15px white;
+}
+.beaverbeli header{
+  position: absolute;
+  top: 95%;
+  margin-left: 100px;
+  width: 50%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 5px 3px 5px black;
+}
+.discover1{
+  position: absolute;
+  background-color: red;
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  margin: -360px 10px 5px 200px;
+  color: white;
+  border-radius: 50px;
+  font-size: 42px
+}
+
+.pledge1{
+  position: absolute;
+  background-color: red;
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  margin: -360px 10px 5px 800px;
+  color: white;
+  border-radius: 50px;
+  font-size: 42px
+}
