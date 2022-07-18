@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
 
 .canada_flag{
 position: relative;
@@ -30,57 +35,185 @@ padding: 10px 10px 10px 10px;
 
 .canada1{
 position: relative;
-width: 58%;
+width: 100%;
 height: 65%;
 margin: -4px;
 margin-top: 20px;
 margin-bottom: 20px;
-border: solid black 3px;
 padding: 10px 10px 10px 10px;
 }
 
 .beaverbeli h1{
   position: absolute;
   top: 60%;
-  margin-left: -70px;
+  margin-left: 500px;
   width: 60%;
   text-align: center;
-  font-size: 140px;
+  font-size: 200px;
   color: blue;
 text-shadow: 2px 2px 15px white;
 }
 .beaverbeli header{
   position: absolute;
-  top: 95%;
-  margin-left: 100px;
-  width: 50%;
-  text-align: center;
-  font-size: 30px;
+  top: 156%;
+  margin-left: 10px;
+  width: 60%;
+  text-align: left;
+  font-size: 48px;
   color: white;
-  text-shadow: 5px 3px 5px black;
+  text-shadow: -1px -1px 2px black;
+  padding: 10px 10px 20px 10px;
 }
 .discover1{
   position: absolute;
   background-color: red;
-  height: 50px;
-  width: 300px;
+  height: 90px;
+  width: 450px;
   text-align: center;
   padding: 10px 10px 10px 10px;
-  margin: -360px 10px 5px 200px;
-  color: white;
+  margin: -400px 10px 5px 200px;
   border-radius: 50px;
-  font-size: 42px
+  font-size: 62px;
+  display: block;
+  text-decoration: none;
+    color: white;
 }
 
-.pledge1{
+.discover1:hover{background-color: pink; box-shadow: 0px 0px 5px 2px gray;}
+
+.discover2{
   position: absolute;
   background-color: red;
-  height: 50px;
-  width: 300px;
+  height: 90px;
+  width: 450px;
   text-align: center;
   padding: 10px 10px 10px 10px;
-  margin: -360px 10px 5px 800px;
+  margin: -400px 10px 5px 1500px;
   color: white;
   border-radius: 50px;
-  font-size: 42px
+  font-size: 62px;
+  text-decoration: none;
 }
+.discover2:hover{background-color: pink; box-shadow: 0px 0px 5px 2px gray;}
+
+.textcluster1,.textcluster2,{position: relative;
+height: 65%;
+width: 100%;
+margin: -4px;
+margin-top: 0px;
+margin-bottom: 20px;
+padding: 10px 10px 10px 10px;}
+
+.textcluster1, h1{
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+.textcluster1 p{
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.textcluster2 h1{
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+.textcluster2 p{
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+
+.canbuild1{
+position: relative;
+width: 30%;
+height: 80%;
+margin: -4px;
+top: 40px;
+margin-top: 0px;
+margin-bottom: 20px;
+padding: 10px 10px 10px 1300px;
+line-height: 1.2;
+}
+.discluster1,.discluster2{padding-bottom: 80px}
+
+.discluster1 h1{
+  position: absolute;
+  font-size: 90px;
+  margin: -1100px 60px 60px 650px;
+  width: 350px;
+  padding: 10px 30px 50px 10px;
+}
+.discluster1 p{
+  position: absolute;
+  margin: -585px 60px 60px 650px;
+  font-size: 32px;
+  width: 20%;
+  padding: 10px 30px 50px 10px;
+}
+
+.candiscover1{
+  position: absolute;
+  background-color: red;
+  height: 80px;
+  width: 450px;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  font-size: 52px;
+  display: block;
+  margin-top: 1em;
+  padding: 0.2em;
+  border-radius: 12px;
+  text-decoration: none;
+  margin: -220px 60px 60px 650px;
+}
+
+.candiscover1:hover{background-color: pink; box-shadow: 0px 0px 5px 2px gray;}
+
+.canbuild2{
+position: relative;
+width: 30%;
+height: 80%;
+margin: -1100px;
+top: 40px;
+margin-top: 0px;
+margin-bottom: 20px;
+padding: 10px 10px 10px 1300px;
+line-height: 1.2;
+}
+
+.discluster2 h1{
+  position: absolute;
+  font-size: 90px;
+  margin: -1100px 60px 60px 1055px;
+  width: 350px;
+  padding: 10px 30px 50px 10px;
+}
+.discluster2 p{
+  position: absolute;
+  margin: -585px 60px 60px 1055px;
+  font-size: 32px;
+  width: 20%;
+  padding: 10px 30px 50px 10px;
+}
+
+.candiscover2{
+  position: absolute;
+  background-color: red;
+  height: 80px;
+  width: 450px;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  font-size: 52px;
+  display: block;
+  margin-top: 1em;
+  padding: 0.2em;
+  border-radius: 12px;
+  text-decoration: none;
+  margin: -220px 60px 60px 1055px;
+}
+
+.candiscover2:hover{background-color: pink; box-shadow: 0px 0px 5px 2px gray;}
