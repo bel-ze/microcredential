@@ -1,7 +1,6 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-
 }
 
 .canada_flag{
@@ -281,3 +280,14 @@ table,tr,th,td{
 }
 
 .navigation{overflow: hidden; }
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
