@@ -3,6 +3,8 @@ html, body {
     overflow-x: hidden;
 }
 
+*{box-sizing: border-box;}
+
 .canada_flag{
 position: relative;
 width: 9%;
@@ -49,9 +51,11 @@ padding: 10px 10px 10px 10px;
   70%{top:10px; left: 10px}
   100%{top:0px; left: 0px}
 }
-
+.beaverbeli{
+  position: relative;
+  overflow: hidden;
+}
 .canada1{
-position: relative;
 width: 100%;
 height: 65%;
 margin: -4px;
@@ -62,23 +66,23 @@ padding: 10px 10px 10px 10px;
 
 .beaverbeli h1{
   position: absolute;
-margin-top: 1300px;
-  margin-left: 500px;
-  width: 60%;
+  top: -10%;
+  left: 50%;
+  right: 50%;
+  bottom: -5000%;
   text-align: center;
-  font-size: 200px;
+  font-size: 12em;
   color: blue;
 text-shadow: 2px 2px 15px white;
 animation-name: texthover; animation-duration: 3s; animation-delay: 1s; animation-iteration-count: infinite;
-overflow: hidden;
 }
 .beaverbeli header{
   position: absolute;
-  top: 154%;
-  margin-left: 10px;
+  top: 70%;
+  left: 0%;
   width: 100%;
   text-align: left;
-  font-size: 48px;
+  font-size: 3em;
   color: white;
   text-shadow: -1px -1px 2px black;
   padding: 10px 10px 20px 10px;
@@ -86,13 +90,13 @@ overflow: hidden;
 .discover1{
   position: absolute;
   background-color: red;
-  height: 90px;
-  width: 450px;
+  height: 1.4em;
+  width: 6em;
   text-align: center;
   padding: 10px 10px 10px 10px;
-  margin: -400px 10px 5px 200px;
+  margin: -300px 10px 5px 200px;
   border-radius: 50px;
-  font-size: 62px;
+  font-size: 2.3em;
   display: block;
   text-decoration: none;
     color: white;
@@ -123,7 +127,7 @@ margin-top: 0px;
 margin-bottom: 20px;
 padding: 10px 10px 10px 10px;}
 
-.textcluster1, h1{
+.textcluster1 h1{
   font-size: 45px;
   margin-bottom: 0px;
 }
@@ -145,14 +149,9 @@ padding: 10px 10px 10px 10px;}
 
 
 .canbuild1{
-position: relative;
+  float: left;
 width: 30%;
 height: 80%;
-margin: -4px;
-top: 40px;
-margin-top: 0px;
-margin-bottom: 20px;
-padding: 10px 10px 10px 1300px;
 line-height: 1.2;
 }
 
@@ -160,75 +159,50 @@ line-height: 1.2;
   filter: blur(7px);
 }
 
-.discluster1,.discluster2{padding-bottom: 80px}
+.discluster1,.discluster2{
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 80px;}
 
-.discluster1 h1{
-  position: absolute;
-  font-size: 90px;
-  margin: -1100px 60px 60px 650px;
-  width: 350px;
-  padding: 10px 30px 50px 10px;
+.dis_clust, .dis_clust2{
+  width: 65%;
+  margin-left: 3%;
+  font-size: 1.3em;
+  padding: 1em;
 }
-.discluster1 p{
-  position: absolute;
-  margin: -585px 60px 60px 650px;
-  font-size: 32px;
-  width: 20%;
-  padding: 10px 30px 50px 10px;
+
+.dis_clust{
+  float: right;
+}
+
+.dis_clust2{
+  float: left;
 }
 
 .candiscover1{
-  position: absolute;
-  background-color: red;
-  height: 80px;
-  width: 450px;
-  text-align: center;
-  color: white;
-  border-radius: 50px;
-  font-size: 52px;
-  display: block;
-  margin-top: 1em;
-  padding: 0.2em;
-  border-radius: 12px;
-  text-decoration: none;
-  margin: -220px 60px 60px 650px;
+
 }
 
 .candiscover1:hover{background-color: pink; box-shadow: 0px 0px 5px 2px gray;}
 
 .canbuild2{
-position: relative;
 width: 30%;
 height: 80%;
-margin: -1100px;
-top: 40px;
-margin-top: 0px;
-margin-bottom: 20px;
-padding: 10px 10px 10px 1300px;
-line-height: 1.2;
+float: right;
 }
 
 .canbuild2:hover{
   filter: blur(7px);
 }
 
-.discluster2 h1{
-  position: absolute;
+.discluster2,.discluster1 h1{
   font-size: 90px;
-  margin: -1100px 60px 60px 1055px;
-  width: 350px;
-  padding: 10px 30px 50px 10px;
 }
-.discluster2 p{
-  position: absolute;
-  margin: -585px 60px 60px 1055px;
+.discluster2,.discluster1 p{
   font-size: 32px;
-  width: 20%;
-  padding: 10px 30px 50px 10px;
 }
 
-.candiscover2{
-  position: absolute;
+.candiscover2,.candiscover1{
   background-color: red;
   height: 80px;
   width: 450px;
@@ -237,11 +211,9 @@ line-height: 1.2;
   border-radius: 50px;
   font-size: 52px;
   display: block;
-  margin-top: 1em;
   padding: 0.2em;
   border-radius: 12px;
   text-decoration: none;
-  margin: -220px 60px 60px 1055px;
 }
 
 .candiscover2:hover{background-color: pink; box-shadow: 0px 0px 5px 2px gray;}
@@ -290,4 +262,11 @@ table,tr,th,td{
   content: "";
   display: table;
   clear: both;
+}
+.navigation{
+  background-color: white;
+  border: solid darkred 1px;
+  left: 50%;
+  width: 12%;
+
 }
