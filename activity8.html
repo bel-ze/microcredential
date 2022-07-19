@@ -133,15 +133,45 @@ function colorPick(lastIndex){
   console.log(`The picked color is ${colors[pickedIndex]}`);
 
 //activity 8
-function checkNum(){
-  let userInput = prompt
+console.log('Activity 8.1:');
+function checkName(name){
+let userInput = parseInt(prompt('Enter a name: '))
+  if (userInput != NaN) {
+    prompt(`${userInput} is invalid! Enter a name again: `)
+  }
+else if (userInput===' ') {
+  prompt('You forgot to enter a name. Enter a name again!');
 }
+  else {
+    console.log(`Welcome to the program ${userInput}`);
+
+  }
+}
+
+console.log('Activity 8.2:');
+function checkNum(num_1){
+let userCheck = parseInt(prompt('Enter a number: '))
+  if (userCheck != NaN) {
+
+
+  }
+}
+
+console.log('Activity 8.3:');
+function lottery(lot1){Array.of(r,r,r,r,r)
+let userlot = parseInt(prompt('Enter a number: '))
+  var r = Math.floor(Math.random()*5);
+
+
+}
+
+
 
     </script>
 
 
 
     <br><br><br>
-    <h3>Updated: 7/16/22 1:20pm: version 1.00</h3>
+    <h3>Updated: 7/18/22 11:20pm: version 1.01</h3>
   </body>
 </html>
