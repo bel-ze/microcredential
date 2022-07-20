@@ -133,36 +133,49 @@ function colorPick(lastIndex){
   console.log(`The picked color is ${colors[pickedIndex]}`);
 
 //activity 8
-console.log('Activity 8.1:');
-function checkName(name){
-let userInput = parseInt(prompt('Enter a name: '))
-  if (userInput != NaN) {
-    prompt(`${userInput} is invalid! Enter a name again: `)
-  }
-else if (userInput===' ') {
-  prompt('You forgot to enter a name. Enter a name again!');
-}
-  else {
-    console.log(`Welcome to the program ${userInput}`);
 
+function checkName(){
+  console.log('Activity 8.1:');
+  let userInput = prompt('Enter a name: ')
+  let forgotError = [' ', null]
+  while (! isNaN(userInput)) {
+    if (forgotError.includes(userInput)) {
+      userInput = prompt('You forgot to enter a name. Enter a name again!');
+    }
+    else {
+      userInput = prompt(`${userInput} is invalid! Enter a name again: `)
+    }
   }
+    console.log(`Welcome to the program ${userInput}!`);
 }
 
-console.log('Activity 8.2:');
 function checkNum(num_1){
-let userCheck = parseInt(prompt('Enter a number: '))
-  if (userCheck != NaN) {
-
-
+  console.log('Activity 8.2:');
+  let userCheck = (prompt('Enter a number: '))
+  while ( isNaN(userCheck)) {
+    userCheck = prompt(`${userCheck} is not a number. Enter a number again!`);
+  }
+  if (userCheck %2==0) {
+    console.log(true)
+  }
+  else {
+  console.log(false)
   }
 }
 
-console.log('Activity 8.3:');
-function lottery(lot1){Array.of(r,r,r,r,r)
-let userlot = parseInt(prompt('Enter a number: '))
-  var r = Math.floor(Math.random()*5);
-
-
+function lottery(userlot){
+  console.log('Activity 8.3:');
+  let lotteryTicks = []
+  for (let a=0; a<userlot; a++){
+    let lotteryTick = []
+  for (let i=0; i<5; i++)
+  {
+      var r = Math.floor(Math.random()*99);
+      lotteryTick.push(r)
+  }
+  lotteryTicks.push(lotteryTick)
+}
+console.log(lotteryTicks);
 }
 
 
@@ -172,6 +185,6 @@ let userlot = parseInt(prompt('Enter a number: '))
 
 
     <br><br><br>
-    <h3>Updated: 7/18/22 11:20pm: version 1.01</h3>
+    <h3>Updated: 7/19/22 9:40pm: version 1.02</h3>
   </body>
 </html>
