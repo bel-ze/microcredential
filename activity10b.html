@@ -263,7 +263,7 @@
     /* YOUR JS CODE FOR ACTIVITY 10 GOES HERE
     /* a) Find all <div> with class="p" and change the font family to "monotype corsive" and font color to orange
        ------------ TYPE YOUR CODE BELOW THIS LINE  ------------*/
-let aChange1 = document.querySelectorAll('.p')
+let aChange1 = document.querySelectorAll('div.p')
 for(let p of aChange1){
   p.style.color = 'orange'
   p.style.fontFamily = 'monotype corsiva'
@@ -273,19 +273,28 @@ for(let p of aChange1){
 
     /* b) Find all <a> with class="add" and add a href attribute with value of #
       ------------ TYPE YOUR CODE BELOW THIS LINE  ------------*/
-let aChange2 = document.querySelectorAll('.add')
-aChange2.classList.add['href="#"']
+      let aChange2 = document.querySelectorAll('a.add')
+for(let a of aChange2) {
+    a.href = "#"
+}
+
 
 
     /* c) Append a <h2> element right after <h1 class="title">. The text content of the <h2> should be your full name.  Also add a class name “subtitle” to <h2>
       ------------ TYPE YOUR CODE BELOW THIS LINE  ------------*/
-let newh2Location = document.querySelector("#title") // found the location for h2
-const newh2 = document.createElement('h2') // created an element for h2 named "newh2"
+let newh2Locate = document.querySelectorAll("h1.title") // found the location for h2
+for(let newh2Location of newh2Locate){
+  const newh2 = document.createElement('h2') // created an element for h2 named "newh2"
+  newh2.innerHTML = "Maybelle Zheng"
+  newh2Location.appendChild(newh2)
+  newh2.classList.add('subtitle')
+}
 
-newh2 = "Maybelle Zheng"
-newh2Location.appendChild(newh2)
 
-.newh2Location.classList.add('subtitle')
+
+
+
+
 
 
     </script>
