@@ -12,17 +12,20 @@
 
       /*-- ACTIVITY 14 --*/
       .a14Circle{width:200px; height: 200px; background-color: purple; padding: 2em; text-align: center; border-radius:50%; margin: 10em; font-size: 1.1em; display: inline-block;}
-      .a14Rectangle{width:200px; height: 200px; border-radius: 0%; background-color: orange; border:yellow; text-align: center; margin: 10em; display: inline-block;}
+      .a14Rectangle{width:400px; height: 200px; border-radius: 0%; background-color: orange; border:yellow; text-align: center; margin: 10em; display: inline-block; vertical-align: middle; line-height: 200px;  user-select: none;}
 
     </style>
   </head>
   <body>
     <!-- ACTIVITY 14 -->
+    <header>
+      Activity 14: jQuery fundamentals
+    </header>
     <div class="a14Circle" id="a14Circle">
-      Click Me!
+      Touch me!
     </div>
     <div class="a14Rectangle" id="a14Rectangle">
-      Touch me!
+      Click Me!
     </div>
 
     <!-- example of dblclick, resize, and hover events-->
@@ -64,23 +67,41 @@
     <script type="text/javascript">
 
         // ACTIVITY 14
+        function ranColor(){
+          // rgb values goes from 0 to 255
+          const r = Math.floor(Math.random()*256)
+          const g = Math.floor(Math.random()*256)
+          const b = Math.floor(Math.random()*256)
+          // change background color of the element
+          return `rgb(${r},${g},${b})`
+        }
+
+        // initialization of counters element for click/hover.
         let counter=0;
+        let counter2=0;
+
+        // function of two div elements, left circle, right rectangle.
         $(function(){
-          $('#a14Rectangle').hover(rectHover);
-          $('#a14Circle').click(singleClick);
+          $('#a14Circle').on('mouseout', circHover);
+          $('#a14Rectangle').click(singleClick);
         })
+
+        // Left side - Hover on Circle
+        function circHover(){
+          ++counter
+          $('#a14Circle').html(`The mouse leaves the circle <b><i>${counter}</i></b> times!`)
+          $('#a14Circle').css('background-color', ranColor());
+}
+
+        // Right side - Click on Rectangle
         function singleClick(){
-          ++counter
-          $('#a14circle').toggleClass('rectangle')
-          $('#a14Circle').html(`Circle was clicked <b><i>${counter}</i></b> times!`)
+          ++counter2
+          $('#a14Rectangle').html(`The rectangle was clicked <b><i>${counter2}</i></b> times!`)
+          $('#a14Rectangle').css('background-color', ranColor());
         }
 
-        function rectHover(){
-          ++counter
-          $('#a14Rectangle').toggleClass('rectangle')
-          $('#a14Rectangle').html(`Retangle was hovered <b><i>${counter}</i></b> times!`)
 
-        }
+
 
 
 
@@ -158,7 +179,7 @@
 
 
 
-<h3>Updated: 7/27/22 9:18pm: version 1.00 (Final)</h3>
+<h3>Updated: 7/28/22 1:07am: version 1.01</h3>
 
 
   </body>
