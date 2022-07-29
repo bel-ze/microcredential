@@ -10,23 +10,30 @@
       .circle{width:200px; height: 200px; background-color: purple; padding: 2em; text-align: center; border-radius:50%; margin: 3em; font-size: 1.1em;}
       .rectangle{border-radius: 0%; background-color: yellow; border:yellow; border: dashed 10px olive;}
 
-      /*-- ACTIVITY 14 --*/
-      .a14Circle{width:200px; height: 200px; background-color: purple; padding: 2em; text-align: center; border-radius:50%; margin: 10em; font-size: 1.1em; display: inline-block;}
+      /*-- ACTIVITY 14 CSS--*/
+      .a14Circle{width:200px; height: 200px; background-color: purple; padding: 2em; text-align: center; border-radius:50%; margin: 10em; font-size: 1.1em; display: flex; justify-content: center; align-items: center;}
+
       .a14Rectangle{width:400px; height: 200px; border-radius: 0%; background-color: orange; border:yellow; text-align: center; margin: 10em; display: inline-block; vertical-align: middle; line-height: 200px;  user-select: none;}
+      .a14cText{color: red;}
+
+      .CirRect{display:flex; flex-direction: row;}
 
     </style>
   </head>
   <body>
-    <!-- ACTIVITY 14 -->
+    <!-- ACTIVITY 14 HTML-->
     <header>
       Activity 14: jQuery fundamentals
     </header>
-    <div class="a14Circle" id="a14Circle">
-      Touch me!
+    <div class="CirRect">
+      <div class="a14Circle" id="a14Circle">
+        <p id="a14cText">Touch me!</p>
+      </div>
+      <div class="a14Rectangle" id="a14Rectangle">
+        Click Me!
+      </div>
     </div>
-    <div class="a14Rectangle" id="a14Rectangle">
-      Click Me!
-    </div>
+
 
     <!-- example of dblclick, resize, and hover events-->
 
@@ -79,18 +86,34 @@
         // initialization of counters element for click/hover.
         let counter=0;
         let counter2=0;
+        function handleTextover(){
+          console.log("Hovering over text!");
+          $('#a14Circle').addClass("intText")
+        }
+
+        function handleTextdone(){
+          console.log("Hovering remove text!");
+          $('#a14Circle').removeClass("intText")
+        }
 
         // function of two div elements, left circle, right rectangle.
         $(function(){
-          $('#a14Circle').on('mouseout', circHover);
           $('#a14Rectangle').click(singleClick);
-        })
+          $('#a14cText').on('mouseover', handleTextover);
+          $('#a14cText').on('mouseout', handleTextdone);
+            if (! $('#a14Circle').hasClass("intText")){
+              $('#a14Circle').on('mouseout', circOut);}
+})
+// right rectangle
+
 
         // Left side - Hover on Circle
-        function circHover(){
-          ++counter
-          $('#a14Circle').html(`The mouse leaves the circle <b><i>${counter}</i></b> times!`)
-          $('#a14Circle').css('background-color', ranColor());
+            function circOut(){
+          console.log($('#a14Circle').hasClass("intText"));
+
+            ++counter
+            $('#a14Circle').html(`<p id="a14cText">The mouse leaves the circle <b><i>${counter}</i></b> times!</p>`)
+            $('#a14Circle').css('background-color', ranColor());
 }
 
         // Right side - Click on Rectangle
