@@ -6,26 +6,74 @@
   </head>
   <body>
 <h1>Maybelle Zheng - Activity 15</h1>
+<link rel="stylesheet" href="activity15.css">
 
+
+<!-- ACTIVITY 15 HTML -->
+<div class="button1">
+  <button type="button" name="button">Click to Get Cat Facts!</button>
+  <button type="button" name="button">Clear and Reset</button>
+</div>
+
+<div class="rect">
+  <h1>Cat Facts 😻</h1>
+</div>
+
+
+<!-- ACTIVITY 15 JS -->
+<script type="text/javascript">
+  const heq = new XMLHttpRequest();
+  heq.onload = function(){
+    console.log('LOADED! cat test');
+    //console.log(this.response);
+    const idea = JSON.parse(this.response)
+    console.log(`FACT: ${idea.fact}`);
+  }
+  heq.onerror = function(){
+    console.log('ERROR!');
+    console.log(this);
+  }
+
+  heq.open("GET", "https://catfact.ninja/fact");
+  heq.send();
+
+</script>
+
+
+
+<!-- Classwork -->
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script type="text/javascript">
   // making a specific request using API headers
-  const getYear = async()=>{
+ const getYear = async()=>{
     const config = {headers: {Accept: 'application/json'}}
-    const res
+    const res = await axios.get('https://swapi.dev/api/people/1/')
+    console.log("Using headers in axios. NAME: ",res.data.name,"BIRTH YEAR: ", res.data.birth_year)
   }
+  // choosing specific response
+  const personID = async(id) =>{
+  try {
+    const res = await axios.get(`https://swapi.dev/api/people/${id}/`)
+    console.log(res.data);
+  } catch (e) {
+    console.log("ERROR!", e);
+  }
+}
   // making request using axios
   let axio = axios.get("https://swapi.dev/api/people/1/")
-  console.log("Request using axios", axio);
+//console.log("Request using axios", axio);
+  .then(res=> {
+    console.log("RESPOSE using axios", res);
+  })
   // try and catch statement in fetch
   // making multiple request using fetch
   const loadPeople = async()=>{
-    try{
+    try {
       const res = await fetch("https://swapi.dev/api/people/1/")
-      const data =await res.json()
+      const data = await res.json()
       console.log(`Multiple response using fetch, 1st person`, data);
-      const res2 = await fetch("https://swapi.dev/api/people/2000/")
+      const res2 = await fetch("https://swapi.dev/api/people/20/")
       const data2 =await res2.json()
       console.log(`Multiple response using fetch, 2nd person`, data2);
     } catch (e) {
@@ -42,8 +90,8 @@
   // making an AJAX request using XHR
   const req = new XMLHttpRequest();
   req.onload = function(){
-    console.log('LOADED');
-    console.log(this.response);
+    console.log('LOADED!: using XHR');
+    // console.log(this.response);
     const person = JSON.parse(this.response)
     console.log(`NAME: ${person.name}, HEIGHT ${person.height}`);
   }

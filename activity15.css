@@ -1,0 +1,13 @@
+.rect{
+  background-color: lightgray;
+  margin: 6em 2em 4em 6em;
+  padding: 10px 10px 10px 10px;
+  width: 500px;
+  height: 350px;
+  text-align: center;
+}
+
+.rect h1{
+  line-height:70px;
+  vertical-align: middle;
+}
