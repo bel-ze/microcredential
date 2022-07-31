@@ -11,21 +11,31 @@
 
 <!-- ACTIVITY 15 HTML -->
 <div class="button1">
-  <button type="button" name="button">Click to Get Cat Facts!</button>
-  <button type="button" name="button">Clear and Reset</button>
+  <button id="butTon1">Click to Get Cat Facts!</button>
+  <button id="butTon2">Clear and Reset</button>
 </div>
 
 <div class="rect">
   <h1>Cat Facts 😻</h1>
+  <h2 id="countUp"></h2>
+  <p id="fact1"></p>
 </div>
 
 
+
+
 <!-- ACTIVITY 15 JS -->
+
+
 <script type="text/javascript">
   const heq = new XMLHttpRequest();
   heq.onload = function(){
     console.log('LOADED! cat test');
     //console.log(this.response);
+    const butTon2 = document.querySelector('#butTon1')
+    butTon2.addEventListener('click', function(){
+      document.getElementById("fact1").innerHTML =`Fact: ${idea.fact}`
+    })
     const idea = JSON.parse(this.response)
     console.log(`FACT: ${idea.fact}`);
   }
@@ -36,6 +46,11 @@
 
   heq.open("GET", "https://catfact.ninja/fact");
   heq.send();
+
+  // initialization of counters element for button click.
+  let counter=0;
+
+
 
 </script>
 
@@ -64,7 +79,7 @@
   let axio = axios.get("https://swapi.dev/api/people/1/")
 //console.log("Request using axios", axio);
   .then(res=> {
-    console.log("RESPOSE using axios", res);
+    console.log("RESPONSE using axios", res);
   })
   // try and catch statement in fetch
   // making multiple request using fetch
