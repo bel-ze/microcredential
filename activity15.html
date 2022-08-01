@@ -32,8 +32,10 @@ let counter=0;
 
 let butTon1 = document.querySelector("#butTon1")
 butTon1.addEventListener("click", function(){
-
+++counter
 function loadFacts() {
+  document.getElementById("fact1").innerHTML = "";
+  document.getElementById("countUp").innerHTML= `${counter}.`;
   fetch(`https://catfact.ninja/fact`)
     .then(response => response.text())
     .then(cata => {
@@ -52,6 +54,15 @@ function loadFacts() {
 
 })
 
+let butTon2 = document.querySelector("#butTon2")
+butTon2.addEventListener("click", function(){
+function clearReset() {
+  document.getElementById("fact1");
+  element.remove();
+  document.getElementById("countUp");
+  element.remove();
+}
+})
 /*
   const heq = new XMLHttpRequest();
   heq.onload = function(){

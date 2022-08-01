@@ -36,7 +36,7 @@
 #butTon1{
   background-color: darkred;
   color: white;
-  border: black;
+  border: lightgray;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -49,7 +49,7 @@
 #butTon2{
   background-color: darkgreen;
   color: white;
-  border: black;
+  border: lightgray;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
