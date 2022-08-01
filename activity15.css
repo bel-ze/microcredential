@@ -1,4 +1,5 @@
 .rect{
+  position: fixed;
   background-color: lightgray;
   margin: 6em 2em 4em 6em;
   padding: 10px 10px 10px 10px;
@@ -22,4 +23,45 @@
   text-align: left;
   padding: 10px 10px 10px 10px;
   width: 500px;
+}
+
+.buttons{
+  width: 520px;
+  text-align: center;
+  margin: 3em 5em 4em 5.5em;
+  position: absolute;
+
+}
+
+#butTon1{
+  background-color: darkred;
+  color: white;
+  border: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 120px;
+  border: solid black;
+}
+
+#butTon2{
+  background-color: darkgreen;
+  color: white;
+  border: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: solid black;
+}
+
+#butTon1:hover{
+  background-color: red;
+}
+
+#butTon2:hover{
+  background-color: green;
 }

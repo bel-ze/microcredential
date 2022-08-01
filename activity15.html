@@ -10,9 +10,9 @@
 
 
 <!-- ACTIVITY 15 HTML -->
-<div class="button1">
-  <button id="butTon1">Click to Get Cat Facts!</button>
-  <button id="butTon2">Clear and Reset</button>
+<div class="buttons">
+  <button type="button" id="butTon1">Click to Get Cat Facts!</button>
+  <button type="button" id="butTon2">Clear and Reset</button>
 </div>
 
 <div class="rect">
@@ -28,12 +28,37 @@
 
 
 <script type="text/javascript">
+let counter=0;
+
+let butTon1 = document.querySelector("#butTon1")
+butTon1.addEventListener("click", function(){
+
+function loadFacts() {
+  fetch(`https://catfact.ninja/fact`)
+    .then(response => response.text())
+    .then(cata => {
+      let cFact = JSON.parse(cata).fact
+      console.log(cFact);
+      let text = document.getElementById("fact1")
+      let node = document.createTextNode(cFact)
+      text.appendChild(node)
+
+      let cFacts = document.querySelector(".cFacts")
+      cFacts.appendChild(text)
+    })
+    .catch(error => console.log("error!"))
+  }
+  loadFacts()
+
+})
+
+/*
   const heq = new XMLHttpRequest();
   heq.onload = function(){
     console.log('LOADED! cat test');
     //console.log(this.response);
     const butTon2 = document.querySelector('#butTon1')
-    butTon2.addEventListener('click', function(){
+    butTon1.addEventListener('click', function(){
       document.getElementById("fact1").innerHTML =`Fact: ${idea.fact}`
     })
     const idea = JSON.parse(this.response)
@@ -44,11 +69,10 @@
     console.log(this);
   }
 
-  heq.open("GET", "https://catfact.ninja/fact");
+  heq.open("GET", "");
   heq.send();
 
-  // initialization of counters element for button click.
-  let counter=0;
+*/
 
 
 
