@@ -40,7 +40,6 @@ function loadFacts() {
     .then(response => response.text())
     .then(cata => {
       let cFact = JSON.parse(cata).fact
-      console.log(cFact);
       let text = document.getElementById("fact1")
       let node = document.createTextNode(cFact)
       text.appendChild(node)
@@ -48,7 +47,7 @@ function loadFacts() {
       let cFacts = document.querySelector(".cFacts")
       cFacts.appendChild(text)
     })
-    .catch(error => console.log("error!"))
+    .catch(error => console.log("Another One"))
   }
   loadFacts()
 
@@ -56,12 +55,11 @@ function loadFacts() {
 
 let butTon2 = document.querySelector("#butTon2")
 butTon2.addEventListener("click", function(){
-function clearReset() {
-  document.getElementById("fact1");
-  element.remove();
-  document.getElementById("countUp");
-  element.remove();
-}
+  counter = 0;
+  document.getElementById("fact1").innerHTML = "";
+  document.getElementById("countUp").innerHTML = "";
+  const timerCat = document.getElementById("countUp");
+
 })
 /*
   const heq = new XMLHttpRequest();
