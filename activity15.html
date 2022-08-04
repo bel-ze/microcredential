@@ -36,18 +36,19 @@ butTon1.addEventListener("click", function(){
 function loadFacts() {
   document.getElementById("fact1").innerHTML = "";
   document.getElementById("countUp").innerHTML= `${counter}.`;
-  fetch(`https://catfact.ninja/fact`)
-    .then(response => response.text())
-    .then(cata => {
-      let cFact = JSON.parse(cata).fact
-      let text = document.getElementById("fact1")
-      let node = document.createTextNode(cFact)
-      text.appendChild(node)
 
-      let cFacts = document.querySelector(".cFacts")
-      cFacts.appendChild(text)
-    })
-    .catch(error => console.log("Another One"))
+    try{
+      fetch(`https://catfact.ninja/fact`)
+      .then(response => response.text())
+      .then(cata => {
+        let cFact = JSON.parse(cata).fact
+        let displayFacts = document.getElementById("fact1")
+        let node = document.createTextNode(cFact)
+        displayFacts.appendChild(node)
+      })
+    }
+
+    catch{(error => console.log("Another One"))}
   }
   loadFacts()
 
