@@ -45,7 +45,7 @@ while i<6:
     print("i= ", i)
     i+=1
 else:
-    print("i is not longer less than 6!")
+    print("i is no longer less than 6!")
 print("Example 11) for-else statement")
 for n in range (7):
     print(n)
@@ -64,7 +64,7 @@ for counter in range (10):
     print("Now counting: ", counter)
     print("=*=*=*=*=*=*=*=*=*=*=*=*=*=")
 print("Example 8) for loop in a string ")
-msg="Hellow world!"
+msg="Hello world!"
 for m in msg:
     print("character = ", m)
 print("Example 7) for loop in a list")
