@@ -43,7 +43,7 @@ def rollDice():
     print("\n\n------ ACTIVITY 3d: Write function that simulate roll the dice ------------- ")
 
     numRoll = int(input("How many times do you want to roll?: "))
-    for i in range(0,numRoll):
+    for i in range(0 ,numRoll):
         numDice = random.randint(1,6)
         print("Roll %s = %s" %(i+1,numDice))
     
