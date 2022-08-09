@@ -278,14 +278,17 @@ h4{
 /* STORE */
 
   /* Modal Window */
-  /* ,modal window */
+    /* Business Open Item Button CSS */
   #openItem1,#openItem2,#openItem3,#openItem4,#openItem5,#openItem6{display: block; padding: 0.2em 0.2em 0.2em 0.5em; color: White; background-color: black; text-align: center; border-radius: 10%;}
+    /* modal window #1 */
   #openItem1:hover{background-color: darkgray;}
-  .modalWindow{background-color: rgba(50,50,50,0.8); position: fixed; top: 0%; bottom: 0%; left:0%; right: 0%; display: none; }
-  .modalBody{width: 60%; height: 800px; margin: 5% auto; background-color: white; border-radius: 1%;}
-  .modalHeader{height: 10%; background-color: #33A1FD; text-align: right; padding: 20px 20px 0 20px;}
-  .modalInfo{height: 70%; padding: 0.5em;}
-  .modalFooter{height: 20%; background-color: #33A1FD; padding: 1em;}
+  #modalWindow1{background-color: rgba(50,50,50,0.8); position: fixed; top: 0%; bottom: 0%; left:0%; right: 0%; display: none; }
+  .modalBody{width: 85%; height: 600px; margin: 5% auto; background-color: white; border-radius: 1%;}
+  .modalHeader{height: 7%; background-color: #33A1FD; text-align: right; padding: 20px 20px 0 20px;}
+  .modalInfo{height: 50%; padding: 0.5em;}
+  .modalFooter{height: 40%; background-color: #33A1FD; padding: 2em;}
+
+
 
 
 
