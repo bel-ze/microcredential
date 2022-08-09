@@ -61,6 +61,12 @@ border-radius: 5%;
 height: 105%;
 }
 
+#linkHome{
+  background-color: #33A1FD;
+  border-radius: 5%;
+  height: 105%;
+}
+
 /* CARD */
 
 
@@ -99,9 +105,11 @@ height: 105%;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
+  transition: transform 0.5s;
 }
 .button1:hover{
   background: #004ba0;
+  transform: translateY(-5px)
 }
 
 .headerColor{

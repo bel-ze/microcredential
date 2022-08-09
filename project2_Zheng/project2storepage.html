@@ -22,16 +22,16 @@
 
 <nav class="homeHeader2">
   <ul id="Menu_items">
-    <li><a href="project2.html" class="Links">Home</a></li>
-    <li><a href="project2.html" class="Links">Store</a></li>
-    <li><a href="project2.html" class="Links">About</a></li>
-    <li><a href="project2.html" class="Links">Login</a></li>
+    <li><a href="project2main.html" class="Links">Home</a></li>
+    <li><a href="#" class="Links">Store</a></li>
+    <li><a href="project2about.html" class="Links">About</a></li>
+    <li><a href="project2login.html" class="Links">Login</a></li>
   </ul>
 </nav>
   <a href="#"><img src="images/cart.png" id="shopBag"  alt="Image of a Cart"></a>
   <img src="images/menu_icon.png" class="menu_icon">
   </section>
-
+</div>
 
     <!--Featured Products-->
     <div class="small-container">
@@ -41,31 +41,37 @@
           <img src="images/beigesofa2.jpg" alt="Picture of a beige sofa">
           <h4>Large Beige Sofa</h4>
             <p>$2599.99</p>
+            <a href="#modalWindow1" id="openItem1">ADD TO CART</a>
           </div>
           <div class="col_4">
           <img src="images/lamp2.webp" alt="Picture of a floor lamp">
           <h4>Classic Living Room Floor Lamp</h4>
           <p>$239.99</p>
+          <a href="#modalWindow2" id="openItem2">ADD TO CART</a>
           </div>
           <div class="col_4">
           <img src="images/bookcase1.jpg" alt="Picture of a brown bookcase">
           <h4>Large Brown Bookcase</h4>
           <p>450.00</p>
+          <a href="#modalWindow3" id="openItem3">ADD TO CART</a>
           </div>
           <div class="col_4">
           <img src="images/greensofa1.webp" alt="">
           <h4>Large Green Sofa</h4>
           <p>$2249.50</p>
+          <a href="#modalWindow4" id="openItem4">ADD TO CART</a>
           </div>
           <div class="col_4">
           <img src="images/loungedeepsofa1.jpg" alt="">
           <h4>Large Gray Sofa</h4>
           <p>$1829.09</p>
+          <a href="#modalWindow5" id="openItem5">ADD TO CART</a>
           </div>
           <div class="col_4">
           <img src="images/leathersofa1.jpg" alt="">
           <h4>Large Brown Leather Sofa</h4>
           <p>$2889.99</p>
+          <a href="#modalWindow6" id="openItem6">ADD TO CART</a>
           </div>
         </div>
       </div>
@@ -107,11 +113,91 @@
                 <hr>
                 <div class="footer_col_2" id=copyRight>
                   <p>This Web Technology OER material, by Maybelle Zheng, is copyrighted under the terms of a Creative Commons license:</p>
-                  <a href="https://creativecommons.org/licenses/"><img src="images/copy_right.png"></a>
+                  <a href="https://creativecommons.org/licenses/" target="_blank"><img src="images/copy_right.png"></a>
                 </div>
               </div>
             </div>
           </div>
+
+          <!--  modal window for item1 // should go in the end who that pictures or text do not go on top of the modal window.-->
+          <form id="myForm" action="checkOut.html" method="post">
+            <section class="modalWindow" id="modalWindow1">
+                <div class="modalBody">
+                  <header class="modalHeader"><a href="#" id="closeModal">X</a></header>
+                  <main class="modalInfo"> INFORMATION OF THE PRODUCT <br><br>
+                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
+                    <br><br>
+                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
+                  </main>
+                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
+                </div>
+            </section>
+          </form>
+          <form id="myForm" action="checkOut.html" method="post">
+            <section class="modalWindow" id="modalWindow2">
+                <div class="modalBody">
+                  <header class="modalHeader"><a href="#" id="closeModal">X</a></header>
+                  <main class="modalInfo"> INFORMATION OF THE PRODUCT <br><br>
+                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
+                    <br><br>
+                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
+                  </main>
+                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
+                </div>
+            </section>
+          </form>
+          <form id="myForm" action="checkOut.html" method="post">
+            <section class="modalWindow" id="modalWindow3">
+                <div class="modalBody">
+                  <header class="modalHeader"><a href="#" id="closeModal">X</a></header>
+                  <main class="modalInfo"> INFORMATION OF THE PRODUCT <br><br>
+                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
+                    <br><br>
+                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
+                  </main>
+                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
+                </div>
+            </section>
+          </form>
+          <form id="myForm" action="checkOut.html" method="post">
+            <section class="modalWindow" id="modalWindow4">
+                <div class="modalBody">
+                  <header class="modalHeader"><a href="#" id="closeModal">X</a></header>
+                  <main class="modalInfo"> INFORMATION OF THE PRODUCT <br><br>
+                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
+                    <br><br>
+                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
+                  </main>
+                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
+                </div>
+            </section>
+          </form>
+          <form id="myForm" action="checkOut.html" method="post">
+            <section class="modalWindow" id="modalWindow5">
+                <div class="modalBody">
+                  <header class="modalHeader"><a href="#" id="closeModal">X</a></header>
+                  <main class="modalInfo"> INFORMATION OF THE PRODUCT <br><br>
+                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
+                    <br><br>
+                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
+                  </main>
+                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
+                </div>
+            </section>
+          </form>
+          <form id="myForm" action="checkOut.html" method="post">
+            <section class="modalWindow" id="modalWindow6">
+                <div class="modalBody">
+                  <header class="modalHeader"><a href="#" id="closeModal">X</a></header>
+                  <main class="modalInfo"> INFORMATION OF THE PRODUCT <br><br>
+                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
+                    <br><br>
+                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
+                  </main>
+                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
+                </div>
+            </section>
+          </form>
 
     <!--Javascript-->
     <script type="text/javascript" src="project2main.js">
