@@ -279,13 +279,20 @@ h4{
 
   /* Modal Window */
     /* Business Open Item Button CSS */
-  #openItem1,#openItem2,#openItem3,#openItem4,#openItem5,#openItem6{display: block; padding: 0.2em 0.2em 0.2em 0.5em; color: White; background-color: black; text-align: center; border-radius: 10%;}
+  #addtoCartButton1,#addtoCartButton2,#addtoCartButton3,#addtoCartButton4,#addtoCartButton5,#addtoCartButton6{display: block; padding: 0.2em 0.2em 0.2em 0.5em; color: White; background-color: black; text-align: center; border-radius: 10%;}
+
+    #addtoCartButton1:hover{background-color: darkgray;}
+    #addtoCartButton2:hover{background-color: darkgray;}
+    #addtoCartButton3:hover{background-color: darkgray;}
+    #addtoCartButton4:hover{background-color: darkgray;}
+    #addtoCartButton5:hover{background-color: darkgray;}
+    #addtoCartButton6:hover{background-color: darkgray;}
     /* modal window #1 */
-  #openItem1:hover{background-color: darkgray;}
+
   #modalWindow1{background-color: rgba(50,50,50,0.8); position: fixed; top: 0%; bottom: 0%; left:0%; right: 0%; display: none; }
-  .modalBody{width: 85%; height: 600px; margin: 5% auto; background-color: white; border-radius: 1%;}
-  .modalHeader{height: 7%; background-color: #33A1FD; text-align: right; padding: 20px 20px 0 20px;}
-  .modalInfo{height: 50%; padding: 0.5em;}
+  .modalBody{width: 85%; height: 600px; margin: 1% auto; background-color: white; border-radius: 1%;}
+  .modalHeader{height: 5%; background-color: #33A1FD; text-align: right; padding: 20px 20px 0 20px;}
+  .modalInfo{height: 30%; padding: 0.5em;}
   .modalFooter{height: 40%; background-color: #33A1FD; padding: 2em;}
 
 

@@ -2,16 +2,17 @@
 // MODAL WINDOW
 
 // MODAL 1
-const openItem1 = document.querySelector('#openItem1')
+const addtoCartButton1 = document.querySelector('#wind1')
 const closeModal1 = document.querySelector('#closeModal1')
 const modalWindow1 = document.querySelector('#modalWindow1')
 
-openItem1.addEventListener('click', function(){
+addtoCartButton1.addEventListener('click', function(){
   modalWindow1.style.display = 'block';
 })
 closeModal1.addEventListener('click', function(){
   modalWindow1.style.display = 'none';
 })
+/*
 
 // MODAL 2
 const openItem2 = document.querySelector('#openItem2')
@@ -73,6 +74,7 @@ closeModal6.addEventListener('click', function(){
   modalWindow6.style.display = 'none';
 })
 
+*/
 
 // STORAGE
 const firstName = document.querySelector('#firstN')
