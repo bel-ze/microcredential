@@ -290,7 +290,7 @@ h4{
     /* modal window #1 */
 
   #modalWindow1{background-color: rgba(50,50,50,0.8); position: fixed; top: 0%; bottom: 0%; left:0%; right: 0%; display: none; }
-  .modalBody{width: 85%; height: 600px; margin: 1% auto; background-color: white; border-radius: 1%;}
+  .modalBody{width: 85%; height: 80%; margin: 5% auto; background-color: white; border-radius: 1%;}
   .modalHeader{height: 5%; background-color: #33A1FD; text-align: right; padding: 20px 20px 0 20px;}
   .modalInfo{height: 30%; padding: 0.5em;}
   .modalFooter{height: 40%; background-color: #33A1FD; padding: 2em;}

@@ -10,37 +10,39 @@ body{
 }
 
 .homeHeader{
-  display: flex;
+  display: inline-block;
   align-items: center;
   padding: 20px;
-
+  border: solid yellow;
+  width: 100%;
 }
 
 .webLogo{
-  margin-top: 10%;
-  padding-right: 100px;
-  width: 360px;
+  width: 15%;
+  border: solid red;
+  float: left;
+  margin-right: 2%;
 }
 
-.break1{
-  color: #2176ff;
-  padding: 4px 5px;
-}
 .homeHeader2{
+  border: solid black;
   overflow: hidden;
-  width: 100%; height: 4.0em;
-  margin-bottom: 1.8%;
-  display: inline-block;
+  width: 75%;
+  display: block;
   text-align: right;
+  float: left;
+  padding: 1%;
 }
 .homeHeader2 ul{
   display: inline-block;
   text-align: right;
+  border: solid pink;
 }
 
 .homeHeader ul li{
   display: inline-block;
   margin-right: 20px;
+  border: solid green;
 }
 
 .homeHeader2 a{
@@ -123,9 +125,28 @@ height: 105%;
 #shopBag{
   display: inline-block;
   position: relative;
-  width: 35px;
-  height: 35px;
-  margin: 30px 130px 65px 20px;
+  width: 4%;
+  margin-left: 2%;
+  float: left;
+  border: solid  green;
+}
+/* Regular Menu*/
+.iconMenu{
+  display: none;
+  height: 5%;
+  width: 7%;
+  border: solid blue;
+  float: right;
+  background: transparent;
+}
+
+.menu_icon{
+  display: block;
+  height: auto;
+  width: 35%;
+  border: solid blue;
+  float: right;
+
 }
 
 /* FEATURED PRODUCTS */
@@ -239,37 +260,84 @@ h4{
   width: 140px;
 }
 
-.menu_icon{
-  display: none;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  margin: 30px 40px 65px -45px;
-}
 /* for menu */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1300px) {
+  .webLogo{
+    width: 25%;
+  }
+.homeHeader2{
+  width: 65%;
+}
+.homeHeader2 ul{
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+.homeHeader2 ul li{
+  margin: 0%;
+  padding: 0%;
+}
+
+#shopBag{
+  width: 6.4%;
+  margin: 0%;
+}
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .webLogo{
+    width: 20%;
+  }
+  .homeHeader2{
+    width: 100%;
+    display: none;
+    height: auto;
+  }
+
   .homeHeader2 ul{
     position: absolute;
-    top: 70px;
-    left: 0px;
-    background: #333;
+    top: 100px;
+    text-align: center;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.7);
     overflow: hidden;
-    width: 100
+    width: 100%;
     transition: max-height 0.5s;
+    display: block;
   }
   .homeHeader2 ul li{
-    display: block;
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100%;
+    display: block;
   }
     .homeHeader2 ul li a{
       color: #fff;
+      width: 100%;
     }
 
 .menu_icon{
-  display: block;
+  width: 10%;
   cursor: pointer;
+  color: white;
+  border: solid orange;
+  float: left;
+}
+
+.iconMenu{
+  display: block;
+  height: auto;
+  width: 60%;
+  border: solid blue;
+  float: right;
+}
+
+#shopBag{
+  display: none;
 }
 
 }

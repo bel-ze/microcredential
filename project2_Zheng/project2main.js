@@ -1,15 +1,32 @@
 //MENU
+console.log("Hello!");
+const MenuItems = document.querySelector('.homeHeader2');
+const clickButton = document.querySelector('.iconMenu');
+window.addEventListener("resize", function(){
+  const screenWidth = window.innerWidth;
 
-
-const MenuItems = document.getElementById('Menu_items');
-MenuItems.style.maxHeight = "1000px";
-
-function toggleMenu(){
-  if (MenuItems.style.maxHeight == "0px")
-  {
-    MenuItems.style.maxHeight = "200px";
+  if (screenWidth>1001) {
+      MenuItems.style.display = "block"
+      console.log(`Windowwidth: ${screenWidth}`);
   }
+
   else {
-    MenuItems.style.maxHeight = "0px";
+    MenuItems.style.display = "none";
   }
+})
+clickButton.addEventListener("click",function(){
+  console.log("Inside Function!");
+
+  if (MenuItems.style.display === "block") {
+    MenuItems.style.display = "none";
+    console.log("If works");
 }
+
+else {
+  MenuItems.style.display = "block"
+  console.log("Else works");
+  }
+
+})
+
+m
