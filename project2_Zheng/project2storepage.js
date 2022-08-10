@@ -12,6 +12,8 @@ addtoCartButton1.addEventListener('click', function(){
 closeModal1.addEventListener('click', function(){
   modalWindow1.style.display = 'none';
 })
+
+
 /*
 
 // MODAL 2

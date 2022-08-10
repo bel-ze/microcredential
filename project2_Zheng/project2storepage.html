@@ -13,24 +13,25 @@
   <body>
 
     <!--header-->
-<div class="headerColor">
-    <section class="break1">
-    </section>
-    <section class="homeHeader">
-      <a href="#"><img src="images/zhouse.png" class="webLogo" alt="image of zHouse"></a>
+    <div class="headerColor">
+        <section class="homeHeader">
+          <a href="#"><img src="images/zhouse.png" class="webLogo" alt="image of zHouse"></a>
 
+          <button class="iconMenu">
+              <img src="images/menu_icon.png" class="menu_icon" alt="picture of a menu icon">
+          </button>
+        <nav class="homeHeader2">
+          <ul id="Menu_items">
+            <li><a href="project2main.html">Home</a></li>
+            <li><a href="project2storepage.html" class="Links" id="linkHome">Store</a></li>
 
-<nav class="homeHeader2">
-  <ul id="Menu_items">
-    <li><a href="project2main.html" class="Links">Home</a></li>
-    <li><a href="#" class="Links">Store</a></li>
-    <li><a href="project2about.html" class="Links">About</a></li>
-    <li><a href="project2login.html" class="Links">Login</a></li>
-  </ul>
-</nav>
-  <a href="#"><img src="images/cart.png" id="shopBag"  alt="Image of a Cart"></a>
-  <img src="images/menu_icon.png" class="menu_icon">
-  </section>
+          </ul>
+        </nav>
+      <a href="#"><img src="images/cart.png" id="shopBag"  alt="Image of a Cart"></a>
+      </section>
+      <div class="mainRow">
+
+    </div>
 </div>
 
     <!--Featured Products-->
@@ -125,91 +126,36 @@
             <section class="modalWindow" id="modalWindow1">
                 <div class="modalBody">
                   <header class="modalHeader"><a href="#modalWindow1" id="closeModal1">X</a></header>
-                  <img src="images/beigesofa2.jpg" alt="Image of a Beige Sofa">
-                  <div class="smallImgs">
+                  <div class="smallImgsMain">
+                    <div class="bigImage" id="productImg1">
+                      <img src="images/beigesofa1.jpg" alt="Image of a Beige Sofa">
+                    </div>
+                    <div class="smallImgsCol" target="bigImage">
+                      <img src="images/beigesofa3.jpg" alt="" class="smallImg-1">
+                    </div>
+                    <div class="smallImgsCol" target="bigImage">
+                      <img src="images/beigesofa4.jpg" alt="" class="smallImg-1">
+                    </div>
+                    <div class="smallImgsCol" target="bigImage">
+                      <img src="images/beigesofa2.jpg" alt="" class="smallImg-1">
+                    </div>
+                    <div class="smallImgsCol" target="bigImage">
+                      <img src="images/beigesofa5.jpg" alt="" class="smallImg-1">
+                    </div>
 
+                    <a href="" class="buttonCheckOut">Add To Cart</a>
                   </div>
+            </section>
+          
 
-
-                  <main class="modalInfo"> INFORMATION OF THE PRODUCT <br><br>
-                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
-                    <br><br>
-                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
-                  </main>
-                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
-                </div>
-            </section>
-          <!--
-          <form id="myForm" action="checkOut.html" method="post">
-            <section class="modalWindow" id="modalWindow2">
-                <div class="modalBody">
-                  <header class="modalHeader"><a href="#" id="closeModal2">X</a></header>
-                  <main class="modalInfo"> INFORMATION OF THE PRODUCT <br><br>
-                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
-                    <br><br>
-                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
-                  </main>
-                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
-                </div>
-            </section>
-          </form>
-          <form id="myForm" action="checkOut.html" method="post">
-            <section class="modalWindow" id="modalWindow3">
-                <div class="modalBody">
-                  <header class="modalHeader"><a href="#" id="closeModal3">X</a></header>
-                  <main class="modalInfo"> INFORMATION OF THE PRODUCT <br><br>
-                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
-                    <br><br>
-                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
-                  </main>
-                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
-                </div>
-            </section>
-          </form>
-          <form id="myForm" action="checkOut.html" method="post">
-            <section class="modalWindow" id="modalWindow4">
-                <div class="modalBody">
-                  <header class="modalHeader"><a href="#" id="closeModal4">X</a></header>
-                  <main class="modalInfo"> INFORMATION OF THE PRODUCT <br><br>
-                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
-                    <br><br>
-                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
-                  </main>
-                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
-                </div>
-            </section>
-          </form>
-          <form id="myForm" action="checkOut.html" method="post">
-            <section class="modalWindow" id="modalWindow5">
-                <div class="modalBody">
-                  <header class="modalHeader"><a href="#" id="closeModal5">X</a></header>
-                  <main class="modalInfo"> INFORMATION OF THE PRODUCT <br><br>
-                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
-                    <br><br>
-                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
-                  </main>
-                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
-                </div>
-            </section>
-          </form>
-          <form id="myForm" action="checkOut.html" method="post">
-            <section class="modalWindow" id="modalWindow6">
-                <div class="modalBody">
-                  <header class="modalHeader"><a href="#" id="closeModal6">X</a></header>
-                  <main class="modalInfo">INFORMATION OF THE PRODUCT <br><br>
-                    <label for="productN">Product Name: <input type="text" name="productName" id='productN' </label>
-                    <br><br>
-                    <label for="productP">Product Price <input type="text" name="productPrice" id=productP </label>
-                  </main>
-                  <footer class="modalFooter"><input type="submit" value="SUBMIT FORM" class="input1"></footer>
-                </div>
-            </section>
-          </form>
-
-        -->
 
     <!--Javascript-->
     <script type="text/javascript" src="project2storepage.js">
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-2.2.2.4.js"></script>
+    <script type="text/javascript">
 
     </script>
 

@@ -13,19 +13,16 @@ body{
   display: inline-block;
   align-items: center;
   padding: 20px;
-  border: solid yellow;
   width: 100%;
 }
 
 .webLogo{
   width: 15%;
-  border: solid red;
   float: left;
   margin-right: 2%;
 }
 
 .homeHeader2{
-  border: solid black;
   overflow: hidden;
   width: 75%;
   display: block;
@@ -36,13 +33,11 @@ body{
 .homeHeader2 ul{
   display: inline-block;
   text-align: right;
-  border: solid pink;
 }
 
 .homeHeader ul li{
   display: inline-block;
   margin-right: 20px;
-  border: solid green;
 }
 
 .homeHeader2 a{
@@ -128,23 +123,21 @@ height: 105%;
   width: 4%;
   margin-left: 2%;
   float: left;
-  border: solid  green;
 }
 /* Regular Menu*/
 .iconMenu{
   display: none;
   height: 5%;
   width: 7%;
-  border: solid blue;
   float: right;
   background: transparent;
+  outline: none;
 }
 
 .menu_icon{
   display: block;
   height: auto;
   width: 35%;
-  border: solid blue;
   float: right;
 
 }
@@ -302,7 +295,7 @@ h4{
     top: 100px;
     text-align: center;
     right: 0px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     width: 100%;
     transition: max-height 0.5s;
@@ -317,23 +310,22 @@ h4{
   }
     .homeHeader2 ul li a{
       color: #fff;
-      width: 100%;
+      width: 50%;
     }
 
 .menu_icon{
   width: 10%;
   cursor: pointer;
   color: white;
-  border: solid orange;
   float: left;
 }
 
 .iconMenu{
   display: block;
   height: auto;
-  width: 60%;
-  border: solid blue;
+  width: 55%;
   float: right;
+  outline: none;
 }
 
 #shopBag{
