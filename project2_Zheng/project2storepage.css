@@ -410,12 +410,58 @@ h4{
   transform: translateY(-5px)
 }
 
+/* modal window #2 */
+#modalWindow2{background-color: rgba(50,50,50,0.8); position: fixed; top: 0%; bottom: 0%; left:0%; right: 0%; display: none; }
+.modalBody{width: 85%; height: 80%; margin: 5% auto; background-color: white; border-radius: 1%;
+overflow-y: hidden;}
+.modalHeader{height: 5%; background-color: #33A1FD; text-align: right; padding: 20px 20px 0 20px;  overflow-y: hidden;}
+.modalInfo{height: 30%; padding: 0.5em;  overflow-y: hidden;}
+.modalFooter{height: 20%; background-color: #33A1FD; padding: 2em;  overflow-y: hidden;
+}
+
+/* modal window #3 */
+#modalWindow3{background-color: rgba(50,50,50,0.8); position: fixed; top: 0%; bottom: 0%; left:0%; right: 0%; display: none; }
+.modalBody{width: 85%; height: 80%; margin: 5% auto; background-color: white; border-radius: 1%;
+overflow-y: hidden;}
+.modalHeader{height: 5%; background-color: #33A1FD; text-align: right; padding: 20px 20px 0 20px;  overflow-y: hidden;}
+.modalInfo{height: 30%; padding: 0.5em;  overflow-y: hidden;}
+.modalFooter{height: 20%; background-color: #33A1FD; padding: 2em;  overflow-y: hidden;
+}
+
+/* modal window #4 */
+#modalWindow4{background-color: rgba(50,50,50,0.8); position: fixed; top: 0%; bottom: 0%; left:0%; right: 0%; display: none; }
+.modalBody{width: 85%; height: 80%; margin: 5% auto; background-color: white; border-radius: 1%;
+overflow-y: hidden;}
+.modalHeader{height: 5%; background-color: #33A1FD; text-align: right; padding: 20px 20px 0 20px;  overflow-y: hidden;}
+.modalInfo{height: 30%; padding: 0.5em;  overflow-y: hidden;}
+.modalFooter{height: 20%; background-color: #33A1FD; padding: 2em;  overflow-y: hidden;
+}
+
+/* modal window #5 */
+#modalWindow5{background-color: rgba(50,50,50,0.8); position: fixed; top: 0%; bottom: 0%; left:0%; right: 0%; display: none; }
+.modalBody{width: 85%; height: 80%; margin: 5% auto; background-color: white; border-radius: 1%;
+overflow-y: hidden;}
+.modalHeader{height: 5%; background-color: #33A1FD; text-align: right; padding: 20px 20px 0 20px;  overflow-y: hidden;}
+.modalInfo{height: 30%; padding: 0.5em;  overflow-y: hidden;}
+.modalFooter{height: 20%; background-color: #33A1FD; padding: 2em;  overflow-y: hidden;
+}
+
+/* modal window #6 */
+#modalWindow6{background-color: rgba(50,50,50,0.8); position: fixed; top: 0%; bottom: 0%; left:0%; right: 0%; display: none; }
+.modalBody{width: 85%; height: 80%; margin: 5% auto; background-color: white; border-radius: 1%;
+overflow-y: hidden;}
+.modalHeader{height: 5%; background-color: #33A1FD; text-align: right; padding: 20px 20px 0 20px;  overflow-y: hidden;}
+.modalInfo{height: 30%; padding: 0.5em;  overflow-y: hidden;}
+.modalFooter{height: 20%; background-color: #33A1FD; padding: 2em;  overflow-y: hidden;
+}
+
 @media only screen and (max-width: 1800px) {
   .bigImage{
     width: 25%;
     height: auto;
   }
 }
+
 
 
 /* ABOUT */
