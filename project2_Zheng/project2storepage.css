@@ -375,6 +375,27 @@ h4{
   .modalFooter{height: 20%; background-color: #33A1FD; padding: 2em;  overflow-y: hidden;
   }
 
+.smallImgsMain{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Replace small images and big image */ 
+
+  .smallImgsCol{
+    width: 15%;
+    float: left;
+    display: flex;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+    margin-left: 2%;
+  }
+
+  .smallImgsDiv{
+    display: flex;
+    flex-direction: column;
+  }
+
 .bigImage{
   margin-top: 0.5%;
   margin-left: 1%;
@@ -382,15 +403,10 @@ h4{
   float: left;
 }
 
-.smallImgsCol img{
-  width: 15%;
-  float: left;
-  display: flex;
-  margin-bottom: 0.5%;
-  margin-top: 0.5%;
-  margin-left: 2%;
-  cursor: pointer;
 
+
+.smallImgsCol{
+    cursor: pointer;
 }
 
 

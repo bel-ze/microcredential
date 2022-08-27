@@ -13,7 +13,7 @@ class Data(db.Model):
     email= db.Column(db.String(120), unique = True)
 
     def __init__(self,email):
-        self.email= email
+        self.email=email
 
 # home page whe application is ran
 @app.route("/")

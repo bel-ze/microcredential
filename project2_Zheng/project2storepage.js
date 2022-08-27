@@ -104,7 +104,22 @@ else {
         modalWindow6.style.display = 'none';
       })
 
+/*
+to continue to progression, redo on React/view or other framework with a Database, ex: postgres, Mongodb (if your data was variable or didn't conform)
+*/
 
+function switchImage(){
+ bigImg = document.getElementById('BigImage ${}')
+}
+
+/* Pseudocode
+Have switch image that takes one parameter that identifies which image was clicked, modal 1 or modal 2
+variable that gets big image id, that will be productimg + number of modalwindow/images
+variable that gets small image id that was clicked that id will be this.id assuming that you have all the ids for small imgs
+Use javascript to change src of big img to small img and swap them
+can call function for each modal
+test on one modal before everything else
+*/
 
 // STORAGE
 
